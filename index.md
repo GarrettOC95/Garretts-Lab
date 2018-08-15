@@ -19,9 +19,7 @@ While testing you should ensure that you are taking relative precautions to mini
    //#######################################################//
    const intercom_css = document.createElement("style");       // Create CSS code to hide the icons
    intercom_css.type = "text/css";
-   intercom_css.innerHTML = "#intercom-container .intercom-composer-gif-button {visibility: hidden;}\
-   #intercom-container .intercom-composer-emoji-button {visibility: hidden;}\
-   #intercom-container .intercom-composer-upload-button {visibility: hidden;}";
+   intercom_css.innerHTML = "#intercom-container .intercom-composer-upload-button {visibility: hidden;}";
    const interval = setInterval(() => {   // Intercept the Messenger iFrame as it loads
    var iframe = document.getElementsByName('intercom-messenger-frame')[0];
    var openLauncher = document.getElementsByClassName("intercom-launcher-open-icon")[0];
